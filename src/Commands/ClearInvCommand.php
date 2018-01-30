@@ -12,7 +12,7 @@ use pocketmine\inventory\Inventory;
 
 class ClearInvCommand extends PluginCommand {
     
-    public function __construct($name, Core $plugin) {
+    public function __construct($name, VanillaCore $plugin) {
 		parent::__construct($name, $plugin);
         $this->setDescription("Clear a player inventory.");
         $this->setPermission("core.clearinv");
