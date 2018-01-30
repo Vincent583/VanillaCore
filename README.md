@@ -12,6 +12,7 @@
 
 ## To Do
 ---------
+- [ ] Armour on Touch
 - [ ] Feed
 - [ ] Heal
 - [ ] Fly
