@@ -12,6 +12,7 @@
 
 ## To Do
 ---------
+- [ ] Shout - Like Hypixel
 - [ ] Armour on Touch
 - [ ] Feed
 - [ ] Heal
