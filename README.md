@@ -12,14 +12,9 @@
 
 ## To Do
 ---------
-- [ ] Shout - Like Hypixel
-- [ ] Armour on Touch
-- [ ] Feed
-- [ ] Heal
-- [ ] Fly
-- [ ] CreativeLimit
-- [ ] HealthBar
-- [ ] Repair/Fix Item
-- [ ] ClearLagg/Command
-- [ ] Broadcast/Command
-- [x] & More
+- [ ] Trash - Command
+- [ ] Shout - Command/Like Hypixel
+- [ ] Feed - Command
+- [ ] Heal - Command
+- [ ] Fly - Command
+- [ ] Repair/Fix Item - Command
