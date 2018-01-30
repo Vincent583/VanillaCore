@@ -6,7 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as C;
 
 #Commands
-use Commands\ClearInv;
+use Commands\ClearInvCommand;
 
 #Events
 use Events\PlayerDeath;
