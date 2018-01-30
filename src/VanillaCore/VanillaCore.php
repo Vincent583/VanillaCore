@@ -5,9 +5,6 @@ namespace VanillaCore;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as C;
 
-#Task
-use Tasks\BroadcastTask, ClearlaggTask};
-
 #Commands
 use Commands\ClearInvCommand;
 
@@ -39,13 +36,5 @@ class VanillaCore extends PluginBase {
     public function RegEvents() {
         $this->getServer()->getPluginManager()->registerEvents(($this->onDropItem = new onDropItem($this)), $this);
         $this->getServer()->getPluginManager()->registerEvents(($this->PlayerDeath = new PlayerDeath($this)), $this);
-    }
-    
-    private function RegTask() {
-        $tick = $this->broadcastcfg->getNested("broadcast.tick");
-	$this->getServer()->getScheduler()->scheduleRepeatingTask(new BroadcastTask($this), $tick); #20 = 1 second
-	    
-        $tick = $this->cmdscfg->get("Clearlagg-tick");
-	$this->getServer()->getScheduler()->scheduleRepeatingTask(new ClearlaggTask($this), $tick); #20 = 1 second
     }
 }
