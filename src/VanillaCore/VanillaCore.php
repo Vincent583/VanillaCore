@@ -44,6 +44,7 @@ class VanillaCore extends PluginBase {
     private function RegTask() {
         $tick = $this->broadcastcfg->getNested("broadcast.tick");
 	$this->getServer()->getScheduler()->scheduleRepeatingTask(new BroadcastTask($this), $tick); #20 = 1 second
+	    
         $tick = $this->cmdscfg->get("Clearlagg-tick");
 	$this->getServer()->getScheduler()->scheduleRepeatingTask(new ClearlaggTask($this), $tick); #20 = 1 second
     }
