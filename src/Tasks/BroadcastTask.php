@@ -11,7 +11,7 @@ class BroadcastTask extends PluginTask{
 	
 	private $plugin;
 	
-	public function __construct(Core $plugin){
+	public function __construct(VanillaCore $plugin){
 		$this->plugin = $plugin;
 		parent::__construct($plugin);
 	}
