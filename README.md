@@ -11,4 +11,13 @@
 ---------
 
 ## To Do
-- [x] Stuff
+---------
+- [ ] Feed
+- [ ] Heal
+- [ ] Fly
+- [ ] CreativeLimit
+- [ ] HealthBar
+- [ ] Repair/Fix Item
+- [ ] ClearLagg/Command
+- [ ] Broadcast/Command
+- [x] & More
