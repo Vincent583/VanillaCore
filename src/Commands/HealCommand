@@ -1,0 +1,31 @@
+<?php
+
+namespace HealCommand;
+
+use VanillaCore\VanillaCore;
+use pocketmine\{Player, Server};
+use pocketmine\utils\TextFormat as C;
+use pocketmine\command\{PluginCommand, CommandSender, ConsoleCommandSender};
+
+class HealCommand extends PluginCommand { 
+	public function __construct($name, VanillaCore $plugin) {		
+		parent::__construct($name, $plugin); 
+		$this->setDescription("Reset health of a player."); 
+		$this->setPermission("core.heal"); 
+		$this->setAliases(["heal"]);	
+	} 
+		public function execute(CommandSender $sender, string $commandLabel, array $args) : bool { 
+			if ($sender instanceof Player) { 
+				if (!$sender->hasPermission("core.heal")) { 
+					$sender->sendMessage(C::RED . "You are not allow to use this command."); 
+					} 
+					else { 
+					$sender->setHealth(20);
+					$sender->sendMessage(C::GREEN . "You have been healed !"); 
+					}
+					else { 
+						$sender->sendMessage("Please use this command In-Game !");
+					 } 
+					 return true; 
+					 }
+				}
