@@ -5,6 +5,9 @@ namespace VanillaCore;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as C;
 
+#Commands
+use Commands\ClearInv;
+
 #Events
 use Events\PlayerDeath;
 use Events\onDropItem;
@@ -17,11 +20,16 @@ class VanillaCore extends PluginBase {
     
     public function onEnable() {
         $this->RegEvents();
+        $this->RegCommands();
         $this->getLogger()->info(C::GREEN . "VanillaCore Enabled!");
     }
     
     public function onDisable() {
         $this->getLogger()->info(C::RED . "VanillaCore Disabled!");
+    }
+    
+    private function RegCommands() {
+        $this->getServer()->getCommandMap()->register("clearinv", new ClearInvCommand("clearinv", $this));
     }
     
     public function RegEvents() {
